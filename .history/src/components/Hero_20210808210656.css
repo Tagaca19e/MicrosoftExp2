@@ -1,0 +1,28 @@
+.short-description {
+  background-color: rgba(58, 57, 57, 0.705);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.particles-container {
+  overflow: hidden;
+  position: absolute;
+  top: 5rem;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+.hero {
+  z-index: 10;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  transition: 0.1s all ease-in-out;
+  animation: app-enter-anim 0.1s ease-out;
+}
+.herp {
+  position: absolute;
+  top: 30%;
+}
