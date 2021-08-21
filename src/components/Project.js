@@ -30,12 +30,12 @@ const Project = () => {
                     srcSet={`${project.image}-1280.webp 1920w,
                   ${project.image}-768.webp 768w,
                   ${project.image}-320.webp 320w`}
-                    sizes="(min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 500px) 50vw, 100vw"
                     type="image/webp"
                   />
                   <source
                     srcSet={`${project.image}-768.jpg 768w,`}
-                    sizes="(min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 500px) 50vw, 100vw"
                     type="image/jpg"
                   />
 
