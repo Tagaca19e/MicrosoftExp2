@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "iSpent | budget tracker  ",
-    image: "images/ibudget",
+    image: "./images/ibudget",
     description:
       "A voice-activated Expense Tracker App that allows you to track income and expenses across a range of categories, developed to showcase the use of React.JS, Material UI, and the use of libraries.",
     tools: ["#React", "#MaterialUI", "#SCSS"],
