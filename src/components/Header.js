@@ -17,7 +17,7 @@ const Header = () => {
     <div className="container">
       <nav class={navBar ? "nav active" : "nav"}>
         <div className="left">
-          <a href="eidometagaca.com" class="logo">
+          <a href="me.eidometagaca.com" class="logo">
             <img src={logo} className="elogo" />
           </a>
         </div>
