@@ -1,47 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
+import logo from "./images/eelogo.png";
 import "react-sticky-header/styles.css";
 import StickyHeader from "react-sticky-header";
-
 const Header = () => {
+  const [navBar, setnavBar] = useState(false);
+  const changebackground = () => {
+    if (window.scrollY >= 80) {
+      setnavBar(true);
+    } else {
+      setnavBar(false);
+    }
+  };
+  window.addEventListener("scroll", changebackground);
   return (
-    <nav className="space-x-10">
-      <ul className="flex flex-row space-x-4 md:space-x-10 md:text-xl justify-center md:justify-end font-thin header">
-        <li>
-          <a
-            href="#aboutSection"
-            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
-          >
-            About
+    <div className="container">
+      <nav class={navBar ? "nav active" : "nav"}>
+        <div className="left">
+          <a href="eidometagaca.com" class="logo">
+            <img src={logo} className="elogo" />
           </a>
-        </li>
-        <li>
-          <a
-            href="#experience"
-            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
-          >
-            Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href="#projects"
-            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
-            href="#call"
-            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+        <div class="nav-right">
+          <a href="#aboutSection">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
   );
 };
-
 export default Header;

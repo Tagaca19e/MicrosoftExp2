@@ -47,6 +47,7 @@ function App() {
             </div>
           }
         >
+          <Header />
           <div className="App  my-10 mx-auto max-w-screen-lg bg-black">
             <AnimatedCursor
               innerSize={15}

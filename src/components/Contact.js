@@ -3,22 +3,28 @@ import "./contact.css";
 import linkedin from "./images/icons/linkedin.svg";
 import github from "./images/icons/github.svg";
 import emailjs from "emailjs";
-
+import MapIcon from "@material-ui/icons/Map";
+import RoomIcon from "@material-ui/icons/Room";
 const Contact = () => {
   return (
     <section>
       <header className="px-5 text-2xl font-bold pt-10">
         <h4>Contact Me</h4>
-        <p className=" font-thin">
-          Got any questions? Feel fee to contact me or ask me!
-        </p>
+        <p>Got any questions?</p>
+        <p className="font-thin">Feel free to contact me or ask me!</p>
       </header>
 
       <div className="md:mx-6 flex flex-col flex-wrap md:flex-row justify-between">
         <div className="md:w-6/12 md:px-0 p-5 my-5">
           <div>
-            <p className="font-bold">Eidmone Tagaca</p>
+            <p className="font-bold">
+              <MapIcon />
+              <RoomIcon />
+            </p>
+
             <p className="font-thin">Bakersfield, California </p>
+            <p className="font-thin">93312</p>
+
             <a
               href="mailto: etagaca@csub.edu"
               className="border-b-2 mt-3 inline-block border-gray-500"

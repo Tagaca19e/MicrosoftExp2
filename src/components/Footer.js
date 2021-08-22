@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-
+import CodeIcon from "@material-ui/icons/Code";
+import StarIcon from "@material-ui/icons/Star";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
+import CopyrightIcon from "@material-ui/icons/Copyright";
 const propTypes = {
   topOuterDivider: PropTypes.bool,
   topDivider: PropTypes.bool,
@@ -32,14 +35,14 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
             {/* <CodeIcon style={{ color: "white" }} fontSize="large" /> */}
 
             {/* <FooterSocial /> */}
+            <CodeIcon />
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <div className="footer-copyright">
-              Coded by{" "}
+              Code by{" "}
               <a href="https://www.linkedin.com/in/eidmone-tagaca-6ab45717b/">
-                Eidmone
+                Eidmone 2021.
               </a>
-              . All right reserved
             </div>
           </div>
         </div>
