@@ -262,3 +262,29 @@ textarea {
     opacity: 1;
   }
 }
+div > .hero > .herp {
+  animation: zoomIn 1500ms both;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+#root > .container > .nav {
+  animation: slideInDown 1200ms 1500ms both;
+}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
