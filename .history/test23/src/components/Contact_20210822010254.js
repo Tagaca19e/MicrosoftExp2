@@ -2,30 +2,9 @@ import React from "react";
 import "./contact.css";
 import linkedin from "./images/icons/linkedin.svg";
 import github from "./images/icons/github.svg";
-import emailjs from "emailjs-com";
+import emailjs from "emailjs";
 import MapIcon from "@material-ui/icons/Map";
-import RoomIcon from "@material-ui/icons/Room";
 const Contact = () => {
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_hicn7he",
-        "template_rpguqbq",
-        e.target,
-        "user_vueX4KtBPy4asJw9HByqY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
   return (
     <section>
       <header className="px-5 text-2xl font-bold pt-10">
@@ -37,9 +16,9 @@ const Contact = () => {
       <div className="md:mx-6 flex flex-col flex-wrap md:flex-row justify-between">
         <div className="md:w-6/12 md:px-0 p-5 my-5">
           <div>
+            <p className="font-bold">Eidmone Tagaca</p>
             <p className="font-bold">
               <MapIcon />
-              <RoomIcon />
             </p>
 
             <p className="font-thin">Bakersfield, California </p>
@@ -103,7 +82,6 @@ const Contact = () => {
             className="flex flex-col space-y-3 m-auto w-full"
             name="contact"
             method="post"
-            onSubmit={sendEmail}
           >
             <input type="hidden" name="from_name" value="contact" />
 

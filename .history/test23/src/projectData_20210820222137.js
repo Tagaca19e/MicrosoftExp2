@@ -15,7 +15,7 @@ const projects = [
       "A React application that searches Github usernames and displays their followers, following, and the number of their repositories using the Github API to fetch data.",
     tools: ["#React", "#API", "#FusionCharts"],
     github: "https://github.com/Tagaca19e/userapp",
-    link: "https://tagaca19e.github.io/usersearch/",
+    link: "https://gitsearch.eidmonetagaca.com/",
   },
   {
     title: "Type-it | typing game ",

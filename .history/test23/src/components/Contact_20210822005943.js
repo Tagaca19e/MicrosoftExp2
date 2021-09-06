@@ -2,49 +2,23 @@ import React from "react";
 import "./contact.css";
 import linkedin from "./images/icons/linkedin.svg";
 import github from "./images/icons/github.svg";
-import emailjs from "emailjs-com";
-import MapIcon from "@material-ui/icons/Map";
-import RoomIcon from "@material-ui/icons/Room";
-const Contact = () => {
-  function sendEmail(e) {
-    e.preventDefault();
+import emailjs from "emailjs";
 
-    emailjs
-      .sendForm(
-        "service_hicn7he",
-        "template_rpguqbq",
-        e.target,
-        "user_vueX4KtBPy4asJw9HByqY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+const Contact = () => {
   return (
     <section>
       <header className="px-5 text-2xl font-bold pt-10">
         <h4>Contact Me</h4>
-        <p>Got any questions?</p>
-        <p className="font-thin">Feel free to contact me or ask me!</p>
+        <p className=" font-thin">
+          Got any questions? Feel free to contact me or ask me!
+        </p>
       </header>
 
       <div className="md:mx-6 flex flex-col flex-wrap md:flex-row justify-between">
         <div className="md:w-6/12 md:px-0 p-5 my-5">
           <div>
-            <p className="font-bold">
-              <MapIcon />
-              <RoomIcon />
-            </p>
-
+            <p className="font-bold">Eidmone Tagaca</p>
             <p className="font-thin">Bakersfield, California </p>
-            <p className="font-thin">93312</p>
-
             <a
               href="mailto: etagaca@csub.edu"
               className="border-b-2 mt-3 inline-block border-gray-500"
@@ -103,7 +77,6 @@ const Contact = () => {
             className="flex flex-col space-y-3 m-auto w-full"
             name="contact"
             method="post"
-            onSubmit={sendEmail}
           >
             <input type="hidden" name="from_name" value="contact" />
 

@@ -17,14 +17,14 @@ const Header = () => {
     <div className="container">
       <nav class={navBar ? "nav active" : "nav"}>
         <div className="left">
-          <a href="/" class="logo">
+          <a href="eidometagaca.com" class="logo">
             <img src={logo} className="elogo" />
           </a>
         </div>
         <div class="nav-right">
           <a href="#aboutSection">About</a>
-          <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
